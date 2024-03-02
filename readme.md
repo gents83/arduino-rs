@@ -30,8 +30,8 @@ cargo generate --git https://github.com/Rahix/avr-hal-template.git
    with the UART console of your board.
 
 ## References
-[`avr-hal` README]: https://github.com/Rahix/avr-hal#readme
-[`ravedude`]: https://crates.io/crates/ravedude
+- avr-hal: https://github.com/Rahix/avr-hal#readme
+- ravedude: https://crates.io/crates/ravedude
 
 ## License
 Licensed under either of
