@@ -16,24 +16,31 @@ fn main() -> ! {
     led.set_high();
 
     loop {
-        led.toggle();
-        arduino_hal::delay_ms(100);
-        led.toggle();
-        arduino_hal::delay_ms(100);
-        led.toggle();
-        arduino_hal::delay_ms(100);
-        led.toggle();
-        arduino_hal::delay_ms(800);
-    }
-/*
-    let dp = arduino_hal::Peripherals::take().unwrap();
-    let pins = arduino_hal::pins!(dp);
-
-    let mut led = pins.d13.into_output();
-
-    loop {
-        led.toggle();
+        //start on
+        
         arduino_hal::delay_ms(1000);
+        led.toggle();
+        //off
+
+        arduino_hal::delay_ms(200);
+        led.toggle();
+        //on
+        
+        arduino_hal::delay_ms(200);
+        led.toggle();
+        //off
+        
+        arduino_hal::delay_ms(200);
+        led.toggle();
+        //on
+        
+        arduino_hal::delay_ms(200);
+        led.toggle();
+        //off
+
+        arduino_hal::delay_ms(200);
+        led.toggle();
+
+        //end on
     }
-*/
 }
